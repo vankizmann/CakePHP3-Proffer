@@ -1,16 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b370da16-045a-46fb-a83a-5599ca6d0c16" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.travis.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/phpunit.xml" beforeDir="false" afterPath="$PROJECT_DIR$/phpunit.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/Behavior/ProfferBehavior.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Behavior/ProfferBehavior.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Shell/ProfferShell.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Shell/ProfferShell.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/TestCase/Lib/ProfferPathTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/TestCase/Lib/ProfferPathTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/TestCase/Model/Behavior/ProfferBehaviorTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/TestCase/Model/Behavior/ProfferBehaviorTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/TestCase/Model/Validation/ProfferRulesTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/TestCase/Model/Validation/ProfferRulesTest.php" afterDir="false" />
-    </list>
+    <list default="true" id="b370da16-045a-46fb-a83a-5599ca6d0c16" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,8 +43,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/tests/TestCase/Model/Behavior/ProfferBehaviorTest.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="583">
-              <caret line="192" column="60" lean-forward="true" selection-start-line="192" selection-start-column="60" selection-end-line="192" selection-end-column="60" />
+            <state relative-caret-position="515">
+              <caret line="191" column="26" lean-forward="true" selection-start-line="191" selection-start-column="26" selection-end-line="191" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -348,25 +339,24 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1578573911938</updated>
-      <workItem from="1578573913292" duration="1250000" />
+      <workItem from="1578573913292" duration="1432000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1250000" />
+    <option name="totallyTimeSpent" value="1432000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1680" y="-367" width="2560" height="1337" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" />
       <window_info anchor="bottom" id="Version Control" />
-      <window_info active="true" anchor="bottom" id="Inspection Results" visible="true" weight="0.32927758" />
-      <window_info anchor="bottom" id="Terminal" weight="0.32927758" />
+      <window_info anchor="bottom" id="Inspection Results" weight="0.32927758" />
+      <window_info anchor="bottom" id="Terminal" visible="true" weight="0.32927758" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -464,8 +454,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tests/TestCase/Model/Behavior/ProfferBehaviorTest.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="583">
-          <caret line="192" column="60" lean-forward="true" selection-start-line="192" selection-start-column="60" selection-end-line="192" selection-end-column="60" />
+        <state relative-caret-position="515">
+          <caret line="191" column="26" lean-forward="true" selection-start-line="191" selection-start-column="26" selection-end-line="191" selection-end-column="26" />
         </state>
       </provider>
     </entry>

@@ -1,7 +1,7 @@
 <?php
 /**
  * Proffer
- * An upload behavior plugin for CakePHP 3
+ * An upload behavior plugin for CakePHP 4
  *
  * @author David Yell <neon1024@gmail.com>
  */
