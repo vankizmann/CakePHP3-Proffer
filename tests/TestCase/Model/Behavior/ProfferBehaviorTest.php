@@ -43,7 +43,7 @@ class ProfferBehaviorTest extends TestCase
     /**
      * Adjust the default root so that it doesn't overwrite and user files
      */
-    public function setUp()
+    public function setUp(): void
     {
         $this->loadPlugins([
             'Proffer' => ['path' => ROOT]
@@ -80,7 +80,7 @@ class ProfferBehaviorTest extends TestCase
      *
      * @return void
      */
-    public function tearDown()
+    public function tearDown(): void
     {
         $this->_rrmdir(TMP . 'ProfferTests' . DS);
     }
@@ -190,7 +190,7 @@ class ProfferBehaviorTest extends TestCase
             ->willReturn($validator);
 
         if ($allowEmpty) {
-            $table->getValidator()->allowEmpty('photo');
+            $table->getValidator()->allowEmptyFile('photo');
         }
 
         $arrayObject = new ArrayObject($data);
@@ -308,11 +308,10 @@ class ProfferBehaviorTest extends TestCase
         $this->assertEquals(200, $squareSizes[1]);
     }
 
-    /**
-     * @expectedException \Proffer\Exception\CannotUploadFileException
-     */
     public function testBeforeSaveWithoutUploadingAFile()
     {
+        $this->expectException(\Proffer\Exception\CannotUploadFileException::class);
+
         $schema = $this->createMock(TableSchema::class);
         $table = $this->createMock(Table::class);
         $eventManager = $this->createMock(EventManager::class);
@@ -355,11 +354,10 @@ class ProfferBehaviorTest extends TestCase
         );
     }
 
-    /**
-     * @expectedException \Proffer\Exception\CannotUploadFileException
-     */
     public function testFailedToMoveFile()
     {
+        $this->expectException(\Proffer\Exception\CannotUploadFileException::class);
+
         $schema = $this->createMock(TableSchema::class);
         $table = $this->createMock(Table::class);
         $eventManager = $this->createMock(EventManager::class);
@@ -864,11 +862,10 @@ class ProfferBehaviorTest extends TestCase
         $this->assertEquals(200, $squareSizes[1]);
     }
 
-    /**
-     * @expectedException \Proffer\Exception\InvalidClassException
-     */
     public function testReplacingComponentsWithNoInterface()
     {
+        $this->expectException(\Proffer\Exception\InvalidClassException::class);
+
         $schema = $this->createMock(TableSchema::class);
         $table = $this->createMock(Table::class);
         $eventManager = $this->createMock(EventManager::class);

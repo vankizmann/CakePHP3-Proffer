@@ -102,8 +102,8 @@ class ProfferShell extends Shell
         $config = $this->Table->behaviors()->Proffer->config();
 
         foreach ($config as $field => $settings) {
-            $records = $this->{$this->Table->alias()}->find()
-                ->select([$this->Table->primaryKey(), $field, $settings['dir']])
+            $records = $this->{$this->Table->getAlias()}->find()
+                ->select([$this->Table->getPrimaryKey(), $field, $settings['dir']])
                 ->where([
                     "$field IS NOT NULL",
                     "$field != ''"
@@ -112,7 +112,7 @@ class ProfferShell extends Shell
             foreach ($records as $item) {
                 if ($this->param('verbose')) {
                     $this->out(
-                        __('Processing ' . $this->Table->alias() . ' ' . $item->get($this->Table->primaryKey()))
+                        __('Processing ' . $this->Table->getAlias() . ' ' . $item->get($this->Table->getPrimaryKey()))
                     );
                 }
 
@@ -135,7 +135,7 @@ class ProfferShell extends Shell
                 if ($this->param('verbose')) {
                     $this->out(__('Thumbnails regenerated for ' . $path->fullPath()));
                 } else {
-                    $this->out(__('Thumbnails regenerated for ' . $this->Table->alias() . ' ' . $item->get($field)));
+                    $this->out(__('Thumbnails regenerated for ' . $this->Table->getAlias() . ' ' . $item->get($field)));
                 }
             }
         }
@@ -291,7 +291,7 @@ class ProfferShell extends Shell
 
         if (!$this->Table->hasBehavior('Proffer')) {
             $out = __(
-                "<error>The table '" . $this->Table->alias() .
+                "<error>The table '" . $this->Table->getAlias() .
                 "' does not have the Proffer behavior attached.</error>"
             );
             $this->out($out);
@@ -302,7 +302,7 @@ class ProfferShell extends Shell
         foreach ($config as $field => $settings) {
             if (!$this->Table->hasField($field)) {
                 $out = __(
-                    "<error>The table '" . $this->Table->alias() .
+                    "<error>The table '" . $this->Table->getAlias() .
                     "' does not have the configured upload field in it's schema.</error>"
                 );
                 $this->out($out);
@@ -310,7 +310,7 @@ class ProfferShell extends Shell
             }
             if (!$this->Table->hasField($settings['dir'])) {
                 $out = __(
-                    "<error>The table '" . $this->Table->alias() .
+                    "<error>The table '" . $this->Table->getAlias() .
                     "' does not have the configured dir field in it's schema.</error>"
                 );
                 $this->out($out);
