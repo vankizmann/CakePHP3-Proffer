@@ -1,6 +1,6 @@
 {
   "name": "davidyell/proffer",
-  "description": "An upload plugin for CakePHP 3",
+  "description": "An upload plugin for CakePHP 4",
   "type": "cakephp-plugin",
   "keywords": [
     "cakephp",
