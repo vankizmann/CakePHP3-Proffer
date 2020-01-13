@@ -21,7 +21,7 @@ class FileType extends StringType
      * @param mixed $value Passed upload array
      * @return mixed
      */
-    public function marshal($value)
+    public function marshal($value): ?string
     {
         return $value;
     }
