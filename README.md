@@ -1,4 +1,4 @@
-# CakePHP3-Proffer
+# CakePHP4-Proffer
 An upload plugin for CakePHP 4.
 
 ![Proffer definition](http://i.imgur.com/OaAqQ6x.png)
