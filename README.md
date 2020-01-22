@@ -1,4 +1,4 @@
-# CakePHP3-Proffer
+# CakePHP4-Proffer
 An upload plugin for CakePHP 4.
 
 ![Proffer definition](http://i.imgur.com/OaAqQ6x.png)
@@ -9,7 +9,7 @@ that I liked I decided to write my own in a similar vein to how [@josegonzalez](
 written his [CakePHP-Upload](https://github.com/josegonzalez/cakephp-upload) plugin for CakePHP 2.
 
 ## Requirements
-* PHP 5.6+
+* PHP 7.2+
 * Database
 * CakePHP 4
 * [Composer](http://getcomposer.org/)
