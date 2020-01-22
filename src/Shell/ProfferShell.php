@@ -1,6 +1,7 @@
 <?php
 namespace Proffer\Shell;
 
+use Cake\Console\ConsoleOptionParser;
 use Cake\Console\Shell;
 use Cake\Core\Exception\Exception;
 use Cake\ORM\Entity;
@@ -26,9 +27,8 @@ class ProfferShell extends Shell
      *
      * @return \Cake\Console\ConsoleOptionParser
      */
-    public function getOptionParser()
+    public function getOptionParser(ConsoleOptionParser $parser): ConsoleOptionParser
     {
-        $parser = parent::getOptionParser();
         $parser->addSubcommand('generate', [
             'help' => __('Regenerate thumbnails for a specific table.'),
             'parser' => [
