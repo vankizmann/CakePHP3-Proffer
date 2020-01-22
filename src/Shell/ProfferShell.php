@@ -27,8 +27,9 @@ class ProfferShell extends Shell
      *
      * @return \Cake\Console\ConsoleOptionParser
      */
-    public function getOptionParser(ConsoleOptionParser $parser): ConsoleOptionParser
+    public function getOptionParser(): ConsoleOptionParser
     {
+        $parser = parent::getOptionParser();
         $parser->addSubcommand('generate', [
             'help' => __('Regenerate thumbnails for a specific table.'),
             'parser' => [
