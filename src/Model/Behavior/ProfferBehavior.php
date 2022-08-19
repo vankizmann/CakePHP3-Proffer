@@ -58,9 +58,18 @@ class ProfferBehavior extends Behavior
     public function beforeMarshal(Event $event, ArrayObject $data, ArrayObject $options)
     {
         foreach ($this->getConfig() as $field => $settings) {
-            if ($this->_table->getValidator()->isEmptyAllowed($field, false) &&
-                isset($data[$field]['error']) && $data[$field]['error'] === UPLOAD_ERR_NO_FILE
-            ) {
+            
+            $hasError = false;
+
+            if ( isset($data[$field]) && is_array($data[$field]) ) {
+                $hasError = isset($data[$field]['error']) && $data[$field]['error'] === UPLOAD_ERR_NO_FILE;
+            }
+
+            if ( isset($data[$field]) && is_object($data[$field]) ) {
+                $hasError = !! $data[$field]->getError();
+            }
+
+            if ($this->_table->getValidator()->isEmptyAllowed($field, false) && $hasError) {
                 unset($data[$field]);
             }
         }
